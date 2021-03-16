@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -28,4 +30,296 @@ nav{
 #img-nav{
   width: 160px;
   margin: 10px auto;
+}
+
+.search{
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search .bar{
+  width: 40%;
+}
+
+.search .bar input{
+  width: 100%;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 3px 3px 3px #B7B7B7;
+  font-size: 20px;
+}
+
+.search .buscar{
+  width: 10%;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.search div button{
+  width: 45px;
+  height: 45px;
+  background: #4169E1;
+  border: none;
+  border-radius: 50%;
+  color: #fff; 
+}
+
+.search .buscar i{
+  font-size: 20px;
+}
+
+.header{
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokedex-grid{
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pokemon-card{
+  box-shadow: 0px 3px 3px 3px #B7B7B7;
+  width: 350px;
+  margin: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.pokemon-card .pokemon-img{
+  width: 96px;
+}
+
+.pokemon-card .pokemon-datos{
+  width: 244px;
+  height: 96px;
+}
+
+.nombre{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre p, .nombre h3{
+  display: inline;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nombre h3{
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.nombre p{
+  color: #B0C4DE;
+}
+
+.pokemon-type{
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.grass{
+  border: 3px solid #78C850;
+  background: #78C85033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #78C850;
+}
+
+.poison{
+  border: 3px solid #B058A0;
+  background: #B058A033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #B058A0;
+}
+
+.poison{
+  border: 3px solid #B058A0;
+  background: #B058A033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #B058A0;
+}
+
+.fire{
+  border: 3px solid #F05030;
+  background: #F0503033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #F05030;
+}
+
+.water{
+  border: 3px solid #3899F8;
+  background: #3899F833;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #3899F8;
+}
+
+.bug{
+  border: 3px solid #A8B820;
+  background: #A8B82033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #A8B820;
+}
+
+.flying{
+  border: 3px solid 	#98A8F0;
+  background: 	#98A8F033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: 	#98A8F0;
+}
+
+.normal{
+  border: 3px solid 	#A8A090;
+  background: 	#A8A09033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: 	#A8A090;
+}
+
+.electric{
+  border: 3px solid #F8D030;
+  background: 	#F8D03033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color: #F8D030;
+}
+
+.ground{
+  border: 3px solid#E9D6A4;
+  background:#E9D6A433;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:	#E9D6A4;
+}
+
+.fairy{
+  border: 3px solid #E79FE7;
+  background:#E79FE733;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#E79FE7;
+}
+
+.fighting{
+  border: 3px solid #A05038;
+  background:#A0503833;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#A05038;
+}
+
+.psychic{
+  border: 3px solid #F870A0;
+  background:#F870A033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#F870A0;
+}
+
+.rock{
+  border: 3px solid #B8A058;
+  background:#B8A05833;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#B8A058;
+}
+
+.steel{
+  border: 3px solid #A8A8C0;
+  background:#A8A8C033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#A8A8C0;
+}
+
+.ice{
+  border: 3px solid #58C8E0;
+  background:#58C8E033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#58C8E0;
+}
+
+.ghost{
+  border: 3px solid #6060B0;
+  background:#6060B033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#6060B0;
+}
+
+.dragon{
+  border: 3px solid #7860E0;
+  background:#7860E033;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#7860E0;
+}
+
+.dark{
+  border: 3px solid 	#7A5848;
+  background:	#7A584833;
+  border-radius: 15px;
+  padding: 2px 5px;
+  color:#7A5848;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button{
+  background: #4169E1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+  color: #fff;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.notFound{
+  text-align: center;
+}
+
+.text-pokemon{
+  text-align: center;
+  font-size: 60px;
+  margin: 50px 0;
+  color: #ffcb05;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 7px 0px 0px #3C5AA6, -7px 0px 0px #3C5AA6, 9px 8px 0px #3C5AA6, 0px 8px 0px #3C5AA6, -7px 8px 0px #3C5AA6, -7px -6px 0px #3C5AA6, 2px -6px 0px #3C5AA6, 12px -6px 0px #3C5AA6, 12px 1px 0px #3C5AA6;
 }

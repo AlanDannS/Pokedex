@@ -1,34 +1,29 @@
 import React, {useState} from 'react';
-import { searchPokemon } from '../Api/api';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+    const {onSearch} = props;
+
     const [search, setSearch] = useState('');
-    const [pokemon, setPokemon] = useState();
 
 
-    const onChange = (e) => setSearch(e.target.value);
+    const onChange = (e) => {
+        setSearch(e.target.value)
+        if(e.target.value.length === 0){
+            onSearch(null);
+        }
+    };
+
+
     const onClick = async (e) =>{
-        const data = await searchPokemon(search);
-        setPokemon(data);
-        console.log(data)
+        onSearch(search);
     };
     return (
-        <div>
-            <div>
+        <div className="search">
+            <div className="bar">
                 <input placeholder='Buscar Pokemon' onChange={onChange}></input>
             </div>
-            <div>
-                <button onClick={onClick}>Buscar</button>
-            </div>
-            <div>
-                {pokemon &&
-                <div>
-                    <div>Nombre: {pokemon.name}</div>
-                    <div>Peso: {pokemon.weight}</div>
-                    <img src={pokemon.sprites.front_default}/>
-                </div>
-                
-                }
+            <div className="buscar">
+                <button onClick={onClick}><i className="fas fa-search"></i></button>
             </div>
         </div>
     )
