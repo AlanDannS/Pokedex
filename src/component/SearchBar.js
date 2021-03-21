@@ -15,7 +15,7 @@ const SearchBar = (props) => {
 
 
     const onClick = async (e) =>{
-        onSearch(search);
+        onSearch(search.toLowerCase());
     };
     return (
         <div className="search">
